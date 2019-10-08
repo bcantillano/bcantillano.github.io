@@ -1,0 +1,112 @@
+/* Style sheet for Index.html (Current Music)*/
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: arial, verdana, sans-serif;
+}
+
+div {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+p {
+  text-transform: uppercase;
+  text-decoration: black;
+  text-indent: 20px;
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  color: #000000;
+}
+
+table {
+  background-color: black;
+}
+
+.artistName {
+  font-size: 40px;
+  text-align: center;
+  line-height: 82px;
+  letter-spacing: -0.005em;
+  font-weight: var(--glue-font-weight-black);
+  color: #fff;
+  text-transform: none;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  padding: 5px;
+}
+
+.albumCover {
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+}
+
+#ArtistField {
+  background-color: rgb(60, 60, 60);
+}
+
+#PageTitle {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.artistImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+}
+
+.SpotifyPlayer {
+  text-align: center;
+  width: 60%;
+  background-color: rgb(69, 174, 63);
+}
+
+.AlbumContainer {
+  display: flex; /* or inline-flex */
+  justify-content: space-around;
+  background-color: rgb(221, 255, 0);
+}
+
+/* 
+
+Uncomment if youd like to see the <divs> colored for visual organization
+
+#travis {
+  background-color: rgb(164, 89, 255)
+}
+
+#uzi {
+  background-color: rgb(70, 221, 255)
+}
+
+#drake {
+  background-color: rgb(255, 0, 0)
+}
+
+#thugger {
+  background-color: rgb(0, 255, 8)
+}
+*/
