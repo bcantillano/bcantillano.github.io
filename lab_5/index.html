@@ -17,7 +17,7 @@
       <button class="button" onclick="replaceBox()">Click me to replace list entries</button>
 
       <div class="content">
-        <ul class="instructions">
+        <ol class="instructions">
           <li>Delete and re-clone the class repository</li>
           <li>Open <span class="code">lab_5_json.html</span> in your browser</li>
           <li>Open your developer tools and look at the logged data</li>
@@ -30,7 +30,7 @@
               <li>Randomize which fifty countries are displayed on load</li>
             </ol>
           </li>
-        </ul>
+        </ol>
       </div>
       <div class="footer"></div>
     </div>
@@ -283,58 +283,55 @@
       { "name": "Zambia", "code": "ZM" },
       { "name": "Zimbabwe", "code": "ZW" }
     ]
-    console.log("List of countries in the world", countries);
+    //console.log("List of countries in the world", countries);
 
-    let test = countries;
-    let c_json = JSON.stringify(test);
+    function loadData(){
 
-    const data = JSON.parse(c_json);
-    console.log(data.name);
+      ////////////////////////////////////////////////////
+      
+      //sessionStorage.setItem("countries_arr", JSON.stringify(countries));
+      //const list = JSON.parse(json_);
+      
+      //for (i = 0; i < 50; i+=1){
 
-    sessionStorage.setItem("countries", JSON.stringify(countries));
-
-    const str = sessionStorage.setItem("countries");
-    const json = JSON.parse(str);
-
-    // console.log(json.key2);
-
-
-
-    ////////////////////////////FUNCTIONS////////////////////////////
-    // function getFifty(){
-
-    //   const nums = [];
-
-    //   for (i = 0; i < 50; i+=1){
-    //     //console.log(Math.floor(Math.random() * (data.length)));
-    //     nums.push(Math.floor(Math.random() * (data.length)));
-    //   }
-
-    //   console.log(nums);
-    // }
-
-    function random_item(items){
-
-      for (i = 0; i < 50; i+=1){
-
-        console.log(items[Math.floor(Math.random()*items.length)]);
-      }
+        //console.log(items[Math.floor(Math.random()*items.length)]);
+      //}
     }
 
     function replaceBox() {
-      var guts = document.getElementsByClassName("instructions");
 
-      guts[0].innerHTML = " ";
+      let test = countries; //assigns 'countries' array to variable 'test'
+      let c_json = JSON.stringify(test); //converts 'test' to string as new variable 'c_json'
+
+      const data = JSON.parse(c_json);
+
+      sessionStorage.setItem("countries_arr", JSON.stringify(data));
+
+      const str = sessionStorage.getItem("countries_arr");
+      const json = JSON.parse(str);
+      const countryNames = json.map((i) => i.name); //maked array with all the country names
+
+      var guts = document.getElementsByClassName("instructions"); //assings everything in 'instructions' class to guts
+
+      guts[0].innerHTML = " "; //removes 'instructions' class
+
+      //var node = document.createElement('ul');
 
       for (i = 0; i < 50; i+=1){
-        //guts[0].innerHTML += random_item(data); //Replace test with whatever you want to appear in box 
-        guts[0].innerHTML += data[Math.floor(Math.random()*data.length)]; //Replace test with whatever you want to appear in box
+        
+        rand = getRandomIntInclusive(0,242);
 
-      }
-          
+        guts[0].innerHTML += "<li>" + countryNames[rand] + "</li>"; //Adds country inside box
+
+      } 
+
     }
-    console.log(random_item(data));
-
+    
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+    }
 
     ////////////////////////////FUNCTIONS////////////////////////////
 
