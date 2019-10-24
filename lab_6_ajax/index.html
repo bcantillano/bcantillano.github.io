@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Test AJAX page</title>
+  <link rel="stylesheet" type="text/css" href="./lab_styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">Test AJAX page</div>
+      <button class="button" onclick="loadData()">Load Some JSON</button>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
+  </div>
+  <script>
+
+    const array = []
+
+    function loadData() {
+
+      fetch('ajax_sample.json')
+        .then(res => res.json())
+        .then(res => res.map(c => c.name))
+        .then(codes => {
+
+          rand15 = ' ';
+
+          var guts = document.getElementsByClassName("content");
+          guts[0].innerHTML = " "
+          
+          const array = codes.map(item => item)
+
+          for (let i=0; i < 15; i++){
+            index = getRandomIntInclusive(0,152)
+            console.log(index);
+            rand15 += array[index]
+          }
+          //console.log(array)
+          //return codes;
+
+          console.log(rand15);
+
+          document.querySelector(".content").innerText = rand15;
+        })
+    }
+
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+    }
+
+  </script>
+</body>
+
+</html>
