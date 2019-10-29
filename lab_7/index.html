@@ -27,7 +27,7 @@
         })
         .then(routes => {
 
-          text = '<ol>'
+          text = '<ul>'
 
           const array = routes.map(item => item)
           console.log(array);
@@ -36,7 +36,7 @@
             text += "<li>" + array[i].route_id + array[i].title + "</li>";
           }
 
-          text += "</ol>"
+          text += "</ul>"
 
           document.querySelector(".content").innerHTML = text;
           document.querySelector(".header").innerHTML = "UMD Bus Route "+ array[1].title;
