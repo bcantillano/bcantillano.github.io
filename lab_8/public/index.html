@@ -19,13 +19,30 @@
     function loadData() {
       console.log('fetch'); // confirm code is running on click
       fetch('/api')
-        .then(res => res.json())
+      .then(res => res.json())
         .then(res => {
           console.log(res); // logging step to check what we got
           return res;
         })
-        .then(res => res.data.map(c => c.route_id))
-        .then(codes => document.querySelector(".content").innerText = codes);
+        .then(res => res.data.map(c => c.course_id))
+        .then(courses => {
+
+          text = '<ol>'
+
+          const test = courses.filter(course_id => course_id.includes('INST'));
+
+          console.log(test);
+
+          for (let i=0; i < test.length; i++){
+            text += "<li>" + test[i] + "</li>";
+          }
+
+          text += '</ol>'
+
+          document.querySelector(".content").innerHTML = text;
+        })
+
+        //.then(codes => document.querySelector(".content").innerText = codes);
     }
   </script>
 </body>
