@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#cfd9e0"/>
+      <stop offset="40%" stop-color="#e4ebf0"/>
+      <stop offset="100%" stop-color="#f2f5f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="22%" r="42%">
+      <stop offset="0%" stop-color="#d6452c" stop-opacity="0.42"/>
+      <stop offset="50%" stop-color="#d6452c" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d6452c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haze" cx="18%" cy="70%" r="48%">
+      <stop offset="0%" stop-color="#6f93a8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#6f93a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f5f7" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#f2f5f7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f2f5f7" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#haze)"/>
+
+  <!-- Soft studio geometry -->
+  <g fill="none" stroke="#152028" stroke-opacity="0.1" stroke-width="1.5">
+    <rect x="140" y="120" width="560" height="360" rx="3"/>
+    <rect x="780" y="180" width="640" height="300" rx="3"/>
+    <path d="M140 420 H700"/>
+    <path d="M780 420 H1420"/>
+  </g>
+
+  <g opacity="0.55" stroke="#152028" stroke-width="1.4" fill="none" stroke-opacity="0.28">
+    <path d="M100 640 C420 520, 760 720, 1120 500 S1460 430, 1540 380"/>
+    <path d="M80 720 C400 600, 740 800, 1100 580 S1440 510, 1560 450" opacity="0.55"/>
+  </g>
+
+  <path
+    d="M220 780 C480 640, 840 820, 1160 600 S1440 520, 1520 460"
+    fill="none"
+    stroke="#d6452c"
+    stroke-width="2.75"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+
+  <rect width="1600" height="900" fill="url(#veil)"/>
+</svg>
