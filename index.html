@@ -1,7 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Byron Eli Cantillano — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Byron Eli Cantillano — selected projects, including Character OS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/portfolio.css" />
+  </head>
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-nav">
+      <a class="nav-brand" href="./">Byron Eli Cantillano</a>
+      <nav aria-label="Page">
+        <a href="#work">Work</a>
+        <a href="https://github.com/bcantillano">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="./assets/hero.svg"
+            width="1600"
+            height="900"
+            alt=""
+            decoding="async"
+          />
+        </div>
+        <div class="hero-copy">
+          <p class="brand">Byron Eli Cantillano</p>
+          <h1>Building systems people can feel.</h1>
+          <p class="lede">
+            Selected work across interactive software, AI characters, and the
+            web — starting with Character OS.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn primary"
+              href="https://bcantillano.github.io/character-os/"
+              >Open Character OS</a
+            >
+            <a class="btn ghost" href="#work">Browse projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="wrap">
+          <h2>Projects</h2>
+          <p class="section-lede">
+            Each project lives in its own repo. This site is the hub — follow a
+            link to open the case study or source.
+          </p>
+
+          <ul class="project-list">
+            <li>
+              <a
+                class="project-link"
+                href="https://bcantillano.github.io/character-os/"
+              >
+                <span class="project-name">Character OS</span>
+                <span class="project-desc">
+                  Python framework for believable AI characters — memory,
+                  emotion, and an event-driven brain.
+                </span>
+                <span class="project-meta">Case study →</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="project-link"
+                href="https://github.com/bcantillano/character-os"
+              >
+                <span class="project-name">Character OS · source</span>
+                <span class="project-desc">
+                  Repository, issues, and implementation details on GitHub.
+                </span>
+                <span class="project-meta">GitHub →</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p>© <span id="year"></span> Byron Eli Cantillano</p>
+        <a href="https://github.com/bcantillano">github.com/bcantillano</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
   </body>
 </html>
