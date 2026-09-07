@@ -70,8 +70,8 @@ DOCUMENTATION.md        # This file
 - **Role:** personal brand gateway, not a project case study.
 - **Look:** signal desk — cool stone ground, vermillion accent, Fraunces (display) + Sora (body). Distinct from Character OS’s mist/teal case-study theme.
 - **Hero:** brand name as the primary signal; one headline, one lede, CTA group, plus a smaller discrete portrait beside the copy (not a full-bleed background).
+- **Skills:** Core skills section mirrored from the resume (languages through AI tools), placed before Projects.
 - **Projects:** CrowdPleaser and Character OS, each with compact tech badges beside the title.
-- **Skills:** Core skills section mirrored from the resume (languages through AI tools).
 
 ## Updating the portrait
 
