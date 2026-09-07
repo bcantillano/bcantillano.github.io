@@ -8,7 +8,24 @@ This repository (`bcantillano.github.io`) is the **user GitHub Pages site** serv
 
 It is the main portfolio hub. Individual projects keep their own repos and, when enabled, their own project Pages sites. The hub links out to those sites with normal HTML anchors.
 
-## Linking to Character OS
+## Linked projects
+
+### CrowdPleaser
+
+Live product site (external domain):
+
+`https://www.crowdpleaser.io`
+
+Linked from the hero CTA and the Projects list:
+
+```html
+<a href="https://www.crowdpleaser.io">Open CrowdPleaser</a>
+```
+
+CrowdPleaser is an event app for hosts and guests (song requests via Spotify,
+invitations, iOS + web join flows). It is hosted outside this repo.
+
+### Character OS
 
 Character OS is a separate repository with GitHub Pages enabled. Its public URL is:
 
@@ -20,7 +37,8 @@ From this hub, links use that absolute URL, for example:
 <a href="https://bcantillano.github.io/character-os/">Open Character OS</a>
 ```
 
-That works because GitHub Pages sites can link to any public URL. Project Pages do not need to live inside this repo.
+That works because GitHub Pages sites can link to any public URL. Project Pages
+and external product sites do not need to live inside this repo.
 
 ### URL pattern reminder
 
@@ -47,11 +65,11 @@ DOCUMENTATION.md        # This file
 - **Role:** personal brand gateway, not a project case study.
 - **Look:** signal desk — cool stone ground, vermillion accent, Fraunces (display) + Sora (body). Distinct from Character OS’s mist/teal case-study theme.
 - **Hero:** brand name as the primary signal; one headline, one lede, CTA group, full-bleed visual.
-- **Projects:** list of outbound links (Character OS case study + GitHub source). Add more `<li>` entries as other project Pages or repos are ready.
+- **Projects:** list of outbound links (CrowdPleaser live site, Character OS case study + GitHub source). Add more `<li>` entries as other projects are ready.
 
 ## Adding another project link
 
-1. Prefer a project Pages URL when the repo has Pages enabled.
+1. Prefer a live product URL or project Pages URL when available.
 2. Otherwise link to the GitHub repository.
 3. Add a new list item under `#work` in `index.html` using the same `project-link` markup.
 
