@@ -112,7 +112,6 @@ a:hover {
 /* —— Hero: copy + smaller portrait —— */
 .hero {
   position: relative;
-  min-height: calc(100svh - 4.2rem);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -124,8 +123,8 @@ a:hover {
   gap: 2rem;
   align-items: center;
   width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.75rem;
   animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -153,9 +152,9 @@ a:hover {
 @media (min-width: 800px) {
   .hero-inner {
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 3rem 4rem;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    gap: 2.5rem 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2.25rem;
   }
 
   .hero-pic {
@@ -244,7 +243,7 @@ a:hover {
 
 /* —— Work —— */
 .work {
-  padding: 4.5rem 0 5rem;
+  padding: 2.5rem 0 4.5rem;
   background:
     linear-gradient(180deg, transparent 0%, var(--panel) 18%, var(--paper) 100%);
 }
