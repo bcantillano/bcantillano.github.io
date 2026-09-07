@@ -114,6 +114,8 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  min-height: calc(100svh - 4.5rem);
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -123,7 +125,7 @@ a:hover {
   gap: 2rem;
   align-items: center;
   width: 100%;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-bottom: 2.75rem;
   animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -153,7 +155,7 @@ a:hover {
   .hero-inner {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 2.5rem 4rem;
-    padding-top: 1.75rem;
+    padding-top: 1.25rem;
     padding-bottom: 3.5rem;
   }
 
