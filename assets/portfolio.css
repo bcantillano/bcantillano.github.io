@@ -34,9 +34,9 @@ body {
   font-size: 1.05rem;
   line-height: 1.55;
   background:
-    radial-gradient(1000px 520px at 85% -10%, rgba(214, 69, 44, 0.14), transparent 55%),
-    radial-gradient(800px 480px at 0% 20%, rgba(120, 160, 180, 0.22), transparent 50%),
-    linear-gradient(180deg, var(--stone) 0%, var(--paper) 35%, var(--paper) 100%);
+    radial-gradient(1000px 580px at 88% -8%, rgba(214, 69, 44, 0.12), transparent 58%),
+    radial-gradient(900px 520px at 0% 18%, rgba(120, 160, 180, 0.2), transparent 55%),
+    linear-gradient(180deg, var(--stone) 0%, var(--paper) 28%, var(--paper) 100%);
   min-height: 100vh;
 }
 
@@ -244,8 +244,7 @@ a:hover {
 /* —— Work —— */
 .work {
   padding: 3.5rem 0 4.75rem;
-  background: var(--paper);
-  border-top: 1px solid var(--line);
+  background: transparent;
 }
 
 .wrap {
@@ -359,8 +358,7 @@ a:hover {
 /* —— Skills —— */
 .skills {
   padding: 3.5rem 0 4.5rem;
-  background:
-    linear-gradient(180deg, transparent 0%, var(--panel) 18%, var(--paper) 100%);
+  background: transparent;
 }
 
 .skills h2 {

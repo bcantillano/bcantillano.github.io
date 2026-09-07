@@ -16,10 +16,10 @@ Live product site (external domain):
 
 `https://www.crowdpleaser.io`
 
-Linked from the hero CTA and the Projects list:
+Linked from the Projects list:
 
 ```html
-<a href="https://www.crowdpleaser.io">Open CrowdPleaser</a>
+<a href="https://www.crowdpleaser.io">CrowdPleaser</a>
 ```
 
 CrowdPleaser is an event app for hosts and guests (song requests via Spotify,
