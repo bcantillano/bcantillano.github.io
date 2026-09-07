@@ -25,6 +25,8 @@ Linked from the hero CTA and the Projects list:
 CrowdPleaser is an event app for hosts and guests (song requests via Spotify,
 invitations, iOS + web join flows). It is hosted outside this repo.
 
+Tech badges shown on the project row: Swift, Spring Boot, Java, React, Spotify API.
+
 ### Character OS
 
 Character OS is a separate repository with GitHub Pages enabled. Its public URL is:
@@ -36,6 +38,8 @@ From this hub, links use that absolute URL, for example:
 ```html
 <a href="https://bcantillano.github.io/character-os/">Open Character OS</a>
 ```
+
+Tech badges shown on the project row: Python, ChatGPT.
 
 That works because GitHub Pages sites can link to any public URL. Project Pages
 and external product sites do not need to live inside this repo.
@@ -66,7 +70,8 @@ DOCUMENTATION.md        # This file
 - **Role:** personal brand gateway, not a project case study.
 - **Look:** signal desk — cool stone ground, vermillion accent, Fraunces (display) + Sora (body). Distinct from Character OS’s mist/teal case-study theme.
 - **Hero:** brand name as the primary signal; one headline, one lede, CTA group, plus a smaller discrete portrait beside the copy (not a full-bleed background).
-- **Projects:** list of outbound links (CrowdPleaser live site, Character OS case study + GitHub source). Add more `<li>` entries as other projects are ready.
+- **Projects:** CrowdPleaser and Character OS, each with compact tech badges beside the title.
+- **Skills:** Core skills section mirrored from the resume (languages through AI tools).
 
 ## Updating the portrait
 
@@ -76,7 +81,7 @@ Replace `assets/portrait.jpg` with a newer image (same filename, or update the `
 
 1. Prefer a live product URL or project Pages URL when available.
 2. Otherwise link to the GitHub repository.
-3. Add a new list item under `#work` in `index.html` using the same `project-link` markup.
+3. Add a new list item under `#work` in `index.html` using the same `project-link` markup, including a `tech-badges` group next to the title.
 
 ## Publishing
 
