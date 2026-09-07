@@ -56,7 +56,8 @@ Old course lab folders (`lab_5`, `lab_6_ajax`, `lab_7`, `lab_8`, `Assignment 1`)
 ```
 index.html              # Portfolio hub page
 assets/portfolio.css    # Hub styles
-assets/hero.svg         # Full-bleed hero atmosphere
+assets/portrait.jpg     # Hero portrait (replace anytime)
+assets/hero.svg         # Optional abstract atmosphere (unused while portrait is active)
 DOCUMENTATION.md        # This file
 ```
 
@@ -64,8 +65,12 @@ DOCUMENTATION.md        # This file
 
 - **Role:** personal brand gateway, not a project case study.
 - **Look:** signal desk — cool stone ground, vermillion accent, Fraunces (display) + Sora (body). Distinct from Character OS’s mist/teal case-study theme.
-- **Hero:** brand name as the primary signal; one headline, one lede, CTA group, full-bleed visual.
+- **Hero:** brand name as the primary signal; one headline, one lede, CTA group, full-bleed portrait with a soft veil for type readability.
 - **Projects:** list of outbound links (CrowdPleaser live site, Character OS case study + GitHub source). Add more `<li>` entries as other projects are ready.
+
+## Updating the portrait
+
+Replace `assets/portrait.jpg` with a newer image (same filename, or update the `src` in `index.html`). A larger photo will look sharper on wide screens; the current file is fine as a placeholder.
 
 ## Adding another project link
 
