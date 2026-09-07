@@ -25,7 +25,7 @@ Linked from the hero CTA and the Projects list:
 CrowdPleaser is an event app for hosts and guests (song requests via Spotify,
 invitations, iOS + web join flows). It is hosted outside this repo.
 
-Tech badges shown on the project row: React, iOS, Spotify.
+Tech badges shown on the project row: Swift, Spring Boot, Java, React, Spotify API.
 
 ### Character OS
 
